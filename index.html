@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reusable Scroll To</title>
+</head>
+<body>
+    <div id="navbar">
+        <h1>reusable-scroll-to</h1>
+    </div>
+    <div id="spacer">
+    </div>
+
+    <section id="first_page">
+        <div class="button_wrapper">
+            <div class="scroll_to_btn" onclick="reusableScrollTo('#second_page')">
+                <h3>Scroll to #second_page</h3>
+            </div>
+            <div class="scroll_to_btn" onclick="reusableScrollTo('#third_page')">
+                <h3>Scroll to #third_page</h3>
+            </div>
+        </div>
+    </section>
+    <section id="second_page">
+        <div class="element_on_top">
+            <h1>Element on top of the section</h1>
+        </div>
+    </section>
+    <section id="third_page">
+        <div class="element_on_top">
+            <h1>Element on top of the section</h1>
+        </div>
+    </section>
+    <script src="reusableScrollTo.js"></script>
+</body>
+</html>
